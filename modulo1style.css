@@ -4,14 +4,20 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
+    position: relative;
 }
 
 .barra-de-navegacion {
     border: solid black;
     padding: 20px;
     font-size: 16px;
+    position: fixed;
+    background: #ffffff;
+    display: flex;
+    top: 0;
+    z-index: 1;
 }
 .logocabecera {
     width: 20px;
@@ -22,17 +28,18 @@
     padding: 20px;
     margin-top: 10px;
     font-size: 32px;
-    font-style: ;
+    top: 100px;
 }
 .ropa {
     border: solid black;
     padding: 20px;
     margin-top: 10px;
     font-size: 14px;
+    top: 100px;
 }
 .mujer {
     border: solid black;
-    padding: 20px;
+    padding: 0px;
     margin-bottom: 10px;
 }
 .hombre {
@@ -44,9 +51,33 @@
     padding: 20px;
     margin-top: 10px;
     font-size: 16px;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
     /*background-color: #212429;*/
     /*color: #ffffff;*/
 }
-.entrega .telefono .email {
-   
+img {
+    border-radius: 15px;
+    padding: 10px;
+}
+.mujer {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hombre {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.componentes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
