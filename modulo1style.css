@@ -8,9 +8,8 @@
     font-style: normal;
     position: relative;
 }
-
 .barra-de-navegacion {
-    border: solid black;
+    border-bottom: solid black;
     padding: 20px;
     font-size: 16px;
     position: fixed;
@@ -18,12 +17,30 @@
     display: flex;
     flex-wrap: wrap;
     top: 0;
+    left: 10px;
+    right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     z-index: 1;
     justify-content: space-around;
 }
 .opciones {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.op1:hover {
+    color: #44bcd8;
+}
+.op2:hover {
+    color: #44bcd8;
+}
+.op3:hover {
+    color: #44bcd8;
+}
+.op4:hover {
+    color: #44bcd8;
+}
+.op1, .op2, .op3, .op4 {
     padding-right: 20px;
 }
 .menu{
@@ -31,57 +48,44 @@
     margin-right: 30px;
     width: 20px;
 }
-.perfil {
+.perfil, .favoritos, .cesta {
     width: 20px;
-}
-.favoritos {
-    width: 20px;
-}
-.cesta {
-    width: 20px;
+    margin-right: 10px;
 }
 .iconos-menu {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
+    text-align: center;
+    gap: 10px;
 }
 .titulo{
-    border: solid black;
-    padding: 20px;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
     font-size: 32px;
     top: 100px;
 }
 .ropa {
-    border: solid black;
     padding: 20px;
     margin-top: 10px;
     font-size: 14px;
     top: 100px;
 }
-.mujer {
-    border: solid black;
-    padding: 0px;
-    margin-bottom: 10px;
-}
-.hombre {
-    border: solid black;
-    padding: 20px;
-}
 .prendas {
     border-radius: 20px;
     padding: 10px;
 }
+.prendas:hover {
+    background: #1979a9;
+}
 .mujer {
     display: flex;
     justify-content: space-around;
-    display: flex;
     flex-wrap: wrap;
 }
 .hombre {
     display: flex;
     justify-content: space-around;
-    display: flex;
     flex-wrap: wrap;
 }
 .componentes {
@@ -93,9 +97,10 @@
     padding-bottom: 10px;
 }
 .footer {
-    /*border: solid black;*/
     padding: 20px;
     margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 16px;
     top: 100px;
     display: flex;
@@ -104,21 +109,38 @@
     background-color: #212429;
     color: #ffffff;
 }
-.entrega {
+.entrega, .telefono, .email {
     border: solid black;
     border-radius: 50px;
     padding: 10px;
     background: #ffffff;
+    margin-right: 10px;
 }
-.telefono {
-    border: solid black;
-    border-radius: 50px;
-    padding: 10px;
-    background: #ffffff;
+.foo1, .foo2, .foo3, .foo4 {
+    display: flex;
+    align-items: center;
+    /*padding: 10px;*/
+    justify-content: space-around;
 }
-.email {
-    border: solid black;
-    border-radius: 50px;
-    padding: 10px;
-    background: #ffffff;
+
+@media (max-width: 920px) {
+    .menu {
+        width: 30px;
+    }
+    .footer {
+        display: grid;
+        justify-content: flex-start;
+    }
+    .foo1, .foo2, .foo3, .foo4 {
+        border-bottom: solid #ffffff;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        left: 0px;
+    }
+    .foo1, .foo2 {
+        justify-content: flex-start;
+    }
+    .opciones, .iconos-menu {
+        display: none;
+    }
 }
